@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 
-import BluePlayBack from '@assets/icons/svgIcons/bluePlayBack';
-import DeleteIcon from '@assets/icons/svgIcons/deleteIcon';
-import ShareIcon from '@assets/icons/svgIcons/shareIcon';
-import Threedot from '@assets/icons/svgIcons/threedot';
-import { icons } from '@assets/index';
-import { Icon, SvgIcon } from '@component/index';
-import { navigate } from '@navigation/navigationsServices';
-import checkAndRequestMultiplePermissions, { PERMISSION_DATA } from '@services/permissionManager';
-import { DUMMY_VOICE, HISTORY_TEXT, screenName } from '@utils/enum';
-import { hp, wp } from '@utils/helper';
-import TrackPlayer, { Capability } from 'react-native-track-player';
+import BluePlayBack from '../../../assets/icons/svgIcons/bluePlayBack';
+import DeleteIcon from '../../../assets/icons/svgIcons/deleteIcon';
+import ShareIcon from '../../../assets/icons/svgIcons/shareIcon';
+import Threedot from '../../../assets/icons/svgIcons/threedot';
+
+import {  SvgIcon } from '../../../component/';
+import { navigate } from '../../../navigation/navigationsServices';
+import { DUMMY_VOICE,  screenName } from '../../../utils/enum';
+import { hp, wp } from '../../../utils/helper';
 
 import style from './style';
 import UseColors from '../../../theme/useColors';
@@ -51,9 +49,6 @@ const HistoryList = () => {
               onPress={async () => {
                 navigate(screenName.PLAY_SCREEN, { data: item });
 
-                await TrackPlayer.add(DUMMY_VOICE);
-                await TrackPlayer.skip(item.index);
-                await TrackPlayer.play();
               }}
             />
             <SvgIcon svgFile={<ShareIcon />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { icons } from '@assets/index';
+import { icons } from '../../../assets/index';
 import { useNavigation } from '@react-navigation/native';
 
 import style from './style';

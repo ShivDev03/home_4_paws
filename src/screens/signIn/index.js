@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, Text, View } from 'react-native';
 
-import { icons } from '@assets/index';
-import { Button } from '@component/index';
-import { Icon, Separator, TeslaCommonLogoTextStyle, TextInputWithLabel } from '@component/index';
-import UseMultiLanguage from '@hooks/useMultiLanguage';
-import { navigate } from '@navigation/navigationsServices';
-import { screenName } from '@utils/enum';
-import { validationEmail, validationPassword } from '@utils/helper';
+import { icons } from '../../assets';
+import { Icon, Separator, TeslaCommonLogoTextStyle, TextInputWithLabel } from '../../component/index';
+
+import { navigate } from '../../navigation/navigationsServices';
+import {
+  buttonName as BUTTON_NAME,
+  errorMessage as ERROR_MESSAGE, otherAuthLines as OTHER_AUTH_LINES,
+  screenName,
+  textInputLabel as TEXT_INPUT_LABEL,
+} from '../../utils/enum';
 
 import style from './style';
+import {screenName as SCREEN_TITLE, textInputPlaceHolder as TEXT_INPUT_PLACEHOLDER} from '../../utils/enum';
 
 const SignIn = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [error, setError] = useState(false);
 
-  const { SCREEN_TITLE, BUTTON_NAME, OTHER_AUTH_LINES, ERROR_MESSAGE, TEXT_INPUT_LABEL, TEXT_INPUT_PLACEHOLDER } = UseMultiLanguage();
 
   return (
     <SafeAreaView style={style.container}>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-import { icons } from '@assets/index';
-import { colors } from '@utils/colors';
+import { icons } from '../../../assets/index';
+import { colors } from '../../../utils/colors';
 
 import style from './style';
 import Icon from '../icon';

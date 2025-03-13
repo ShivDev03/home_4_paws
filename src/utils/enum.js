@@ -8,15 +8,14 @@ export const screenName = {
   SIGN_IN: 'SignIn',
   SIGNUP: 'SignUp',
   FORGOT_PASSWORD: 'ForgotPassword',
-  CHAT_SCREEN: 'ChatScreen',
   PLAY_SCREEN: 'PlayScreen',
 };
 //enum for language
 export const tabStackName = {
-  ENHANCE_STACK: 'ENHANCE_STACK',
   CREATE_STACK: 'CREATE_STACK',
   HISTORY_STACK: 'HISTORY_STACK',
   CLONE_STACK: 'CLONE_STACK',
+  HOME_STACK: 'HOME_STACK',
 };
 
 export const ScreenTitle = {

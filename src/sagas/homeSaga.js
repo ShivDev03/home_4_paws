@@ -1,5 +1,5 @@
-import * as homeAction from '@actions/homeAction';
-import * as TYPES from '@actions/types';
+import * as homeAction from '../actions/homeAction';
+import * as TYPES from '../actions/types';
 import { all, call, put, takeLatest } from 'redux-saga/effects';
 
 import { homeApi } from '../api/homeApi';

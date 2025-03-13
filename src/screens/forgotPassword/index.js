@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
 
-import { icons } from '@assets/index';
-import { Button, Header, TextInputWithLabel } from '@component/index';
-import UseMultiLanguage from '@hooks/useMultiLanguage';
+import { icons } from '../../assets';
+import {  Header, TextInputWithLabel } from '../../component/';
 
 import style from './style';
+import {
+    screenName as SCREEN_TITLE,
+    textInputLabel as TEXT_INPUT_LABEL,
+    textInputPlaceHolder as TEXT_INPUT_PLACEHOLDER,
+} from '../../utils/enum';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState();
-  const { BUTTON_NAME, SCREEN_TITLE, TEXT_INPUT_PLACEHOLDER, TEXT_INPUT_LABEL } = UseMultiLanguage();
   return (
     <SafeAreaView style={style.container}>
       <Header />

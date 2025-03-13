@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 
-import DrawerIcon from '@assets/icons/svgIcons/drawerIcon';
-import KingIcon from '@assets/icons/svgIcons/kingIcon';
-import StarIcon from '@assets/icons/svgIcons/starIcon';
-import { navigate } from '@navigation/navigationsServices';
-import { screenName } from '@utils/enum';
+import DrawerIcon from '../../../assets/icons/svgIcons/drawerIcon';
+import KingIcon from '../../../assets/icons/svgIcons/kingIcon';
+import StarIcon from '../../../assets/icons/svgIcons/starIcon';
+import { navigate } from '../../../navigation/navigationsServices';
+import { screenName } from '../../../utils/enum';
 
 import style from './style';
 import UseColors from '../../../theme/useColors';

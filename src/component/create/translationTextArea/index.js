@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 
-import GoogleTranslationIcon from '@assets/icons/svgIcons/googleTranslationIcon';
-import PlayBackIcon from '@assets/icons/svgIcons/playBackIcon';
+import GoogleTranslationIcon from '../../../assets/icons/svgIcons/googleTranslationIcon';
+import PlayBackIcon from '../../../assets/icons/svgIcons/playBackIcon';
 
 import style from './style';
 import UseColors from '../../../theme/useColors';

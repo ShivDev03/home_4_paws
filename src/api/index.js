@@ -1,7 +1,7 @@
 import { AsyncStorage } from 'react-native';
 
 import axios from 'axios/index';
-import Config from 'react-native-config';
+
 
 import { navigate } from '../navigation/navigationsServices';
 import { store } from '../reducers/store';
@@ -13,7 +13,7 @@ const defaultHeaders = {
 };
 
 const url = (path) => {
-  return Config.API_URL + path;
+  return 'main api path' + path;
 };
 
 const getHeaders = async (auth) => {

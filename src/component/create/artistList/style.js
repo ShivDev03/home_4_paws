@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { fontFamily, hp, wp } from '@utils/helper';
+import { fontFamily, hp, wp } from '../../../utils/helper';
 
 const style = StyleSheet.create({
   container: { marginTop: hp(30), marginHorizontal: wp(20) },

@@ -1,23 +1,18 @@
 import { Dimensions, Platform } from 'react-native';
 
-import { RFValue } from 'react-native-responsive-fontsize';
-import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
-import { getStatusBarHeight } from 'react-native-status-bar-height';
+
 import * as Yup from 'yup';
 
-import { STANDARD_SCREEN_HEIGHT, STANDARD_SCREEN_WIDTH } from './constants';
-
 export const wp = (val) => {
-  const valInPercentage = (val * 100) / STANDARD_SCREEN_WIDTH;
-  return widthPercentageToDP(valInPercentage);
+
+  return val;
 };
 
 export const hp = (val) => {
-  const valInPercentage = (val * 100) / STANDARD_SCREEN_HEIGHT;
-  return heightPercentageToDP(valInPercentage);
+ return val;
 };
 
-export const fontSize = (value) => RFValue(value, STANDARD_SCREEN_HEIGHT);
+export const fontSize = (value) => value;
 
 export const screenWidth = Dimensions.get('window').width;
 
@@ -29,7 +24,6 @@ export const REACT_APP_GOOGLE_MAP_KEY = 'AIzaSyAlUV7Gli9S0rwtq72UMXLf9HlrRWkvqc8
 
 export const isIOS = Platform.OS === 'ios';
 
-export const statusBarHeight = getStatusBarHeight();
 
 export const validateMobileNumber = (text) => {
   // return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(text);

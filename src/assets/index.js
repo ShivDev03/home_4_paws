@@ -11,6 +11,8 @@ export const icons = {
   tabArrow: require('./icons/ic_tabArrow.png'),
   user: require('./icons/user.png'),
   playUser: require('./icons/playScreenPhoto.png'),
+  shop:require('./icons/ic_shop.png'),
+  paw: require('./icons/ic_paw.png'),
 };
 export const image = {
   premiumBackground: require('./image/premiumBackground.png'),

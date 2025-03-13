@@ -4,8 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 // Screens
 import Charging from 'src/screens/Clone';
-import Booking from 'src/screens/Create';
-import Explore from 'src/screens/Enhance';
+import Home from 'src/screens/Home';
 import AddStation from 'src/screens/History';
 import Planner from 'src/screens/Premium';
 
@@ -14,18 +13,10 @@ const Stack = createStackNavigator();
 export const ExploreStack = () => {
   return (
     <Stack.Navigator initialRouteName="Explore" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Explore" component={Explore} />
+      <Stack.Screen name="Explore" component={Home} />
     </Stack.Navigator>
   );
 };
-export const BookingStack = () => {
-  return (
-    <Stack.Navigator initialRouteName="Booking" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Booking" component={Booking} />
-    </Stack.Navigator>
-  );
-};
-
 export const AddStationStack = () => {
   return (
     <Stack.Navigator initialRouteName="AddStation" screenOptions={{ headerShown: false }}>

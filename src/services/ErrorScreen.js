@@ -1,4 +1,4 @@
-import ErrorHandling from '@screens/errorHandling';
+import ErrorHandling from '../screens/errorHandling';
 import ErrorBoundary from 'react-native-error-boundary';
 
 const ErrorScreen = ({ children }) => {

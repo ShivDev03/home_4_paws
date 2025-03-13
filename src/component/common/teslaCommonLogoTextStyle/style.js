@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { fontSize, hp } from '@utils/helper';
+import { fontSize, hp } from '../../../utils/helper';
 
 const style = StyleSheet.create({
   teslaLogoTextStyle: {

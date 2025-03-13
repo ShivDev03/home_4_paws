@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import { Image, ImageBackground, Text, View } from 'react-native';
 
-import RightIcon from '@assets/icons/svgIcons/rightIcon';
-import { image } from '@assets/index';
-import { colors } from '@utils/colors';
-import { PREMIUM_DETAILS } from '@utils/enum';
-import { hp, screenWidth } from '@utils/helper';
+import RightIcon from '../../assets/icons/svgIcons/rightIcon';
+import { image } from '../../assets/index';
+import { colors } from '../../utils/colors';
+import { PREMIUM_DETAILS } from '../../utils/enum';
+import {  screenWidth } from '../../utils/helper';
 import { LinearGradient } from 'react-native-linear-gradient';
 
 import style from './style';

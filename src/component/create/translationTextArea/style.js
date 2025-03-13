@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
-import { colors } from '@utils/colors';
-import { fontFamily, hp, wp } from '@utils/helper';
+import { colors } from '../../../utils/colors';
+import { fontFamily, hp, wp } from '../../../utils/helper';
 
 const style = StyleSheet.create({
   mainContainer: {

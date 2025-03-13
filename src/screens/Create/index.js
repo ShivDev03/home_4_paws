@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 
-import { ArtistList, EnhanceHeader, TextSelection, TranslationTextArea } from '@component/index';
+import { ArtistList, EnhanceHeader, TextSelection, TranslationTextArea } from '../../component';
 
 import style from './style';
 import UseColors from '../../theme/useColors';

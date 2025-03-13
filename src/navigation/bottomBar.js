@@ -1,30 +1,29 @@
 import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 
-import CloneTabIcon from '@assets/icons/svgIcons/cloneTabIcon';
-import CreateTabIcon from '@assets/icons/svgIcons/createTabIcon';
-import EnhanceTabIcon from '@assets/icons/svgIcons/enhanceTabIcon';
-import HistoryTabIcon from '@assets/icons/svgIcons/historyTabIcon';
-import { icons } from '@assets/index';
+import CloneTabIcon from '../assets/icons/svgIcons/cloneTabIcon';
+import CreateTabIcon from '../assets/icons/svgIcons/createTabIcon';
+import EnhanceTabIcon from '../assets/icons/svgIcons/enhanceTabIcon';
+import HistoryTabIcon from '../assets/icons/svgIcons/historyTabIcon';
+import {icons, image} from '../assets';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import History from '@screens/History';
-import { tabStackName } from '@utils/enum';
-import { useTranslation } from 'react-i18next';
-import Clone from 'src/screens/Clone';
-import Create from 'src/screens/Create';
-import Enhance from 'src/screens/Enhance';
+import History from '../screens/History';
+import { tabStackName } from '../utils/enum';
+import Clone from '../screens/Clone';
+import Create from '../screens/Create';
+import Enhance from '../screens/Home';
 
 import style from './style';
 import UseColors from '../theme/useColors';
-
+import Home from '../screens/Home';
 const Tab = createBottomTabNavigator();
 
 const MyTabBar = ({ state, navigation }) => {
   const { themeColors } = UseColors();
   const icon = (label, isFocused) => {
     switch (label) {
-      case 'Enhance':
-        return <EnhanceTabIcon color={isFocused ? themeColors.selectedTabIconColor : themeColors.unSelectedTabIconColor} />;
+      case 'Home':
+        return <Image source={icons.paw} style={{height:24,width:24}} />;
       case 'Create':
         return <CreateTabIcon iconColor={isFocused ? themeColors.selectedTabIconColor : themeColors.unSelectedTabIconColor} />;
       case 'History':
@@ -37,7 +36,7 @@ const MyTabBar = ({ state, navigation }) => {
     <View style={[style.bottomBarContainer, { backgroundColor: themeColors.screenBackground }]}>
       {state.routes.map((route, index) => {
         const label = route.name.split('_')[0].charAt(0).toUpperCase() + route.name.split('_')[0].slice(1).toLowerCase();
-
+        console.log("khanjan",label);
         const isFocused = state.index === index;
 
         const onPress = () => {
@@ -64,12 +63,12 @@ const MyTabBar = ({ state, navigation }) => {
 };
 
 const BottomBar = () => {
-  const { t } = useTranslation();
+
   return (
     // sell modal
     <>
       <Tab.Navigator
-        initialRouteName={t(tabStackName.EXPLORE_STACK)}
+        initialRouteName={tabStackName.HOME_STACK}
         screenOptions={{
           headerShown: false,
           tabBarHideOnKeyboard: true,
@@ -78,7 +77,7 @@ const BottomBar = () => {
           return <MyTabBar {...props} />;
         }}
       >
-        <Tab.Screen name={tabStackName.ENHANCE_STACK} component={Enhance} />
+        <Tab.Screen name={tabStackName.HOME_STACK} component={Home} />
 
         <Tab.Screen name={tabStackName.CREATE_STACK} component={Create} />
 

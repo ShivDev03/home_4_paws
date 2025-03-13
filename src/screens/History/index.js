@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
 
-import { HistoryHeader, HistoryList } from '@component/index';
+import { HistoryHeader, HistoryList } from '../../component/';
 
 import style from './style';
 import UseColors from '../../theme/useColors';

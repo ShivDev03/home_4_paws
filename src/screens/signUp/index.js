@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, Text, View } from 'react-native';
 
-import { icons } from '@assets/index';
-import { Button, TeslaCommonLogoTextStyle, TextInputWithLabel } from '@component/index';
-import UseMultiLanguage from '@hooks/useMultiLanguage';
-import { navigate } from '@navigation/navigationsServices';
-import { screenName } from '@utils/enum';
+import { icons } from '../../assets';
+import { Button, TeslaCommonLogoTextStyle, TextInputWithLabel } from '../../component';
+import { navigate } from '../../navigation/navigationsServices';
+import {
+  screenName as BUTTON_NAME,
+  screenName,
+  textInputLabel as TEXT_INPUT_LABEL,
+  textInputPlaceHolder as TEXT_INPUT_PLACEHOLDER,
+} from '../../utils/enum';
 
 import style from './style';
 
 const SignUp = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const { SCREEN_TITLE, BUTTON_NAME, OTHER_AUTH_LINES, TEXT_INPUT_LABEL, TEXT_INPUT_PLACEHOLDER } = UseMultiLanguage();
   return (
     <SafeAreaView style={style.container}>
       <ScrollView>
         <TeslaCommonLogoTextStyle />
 
         <View style={style.subContainer}>
-          <Text style={style.signUpTextStyle}>{SCREEN_TITLE.SIGN_UP}</Text>
+          <Text style={style.signUpTextStyle}>SIGN_UP</Text>
           <TextInputWithLabel label={TEXT_INPUT_LABEL.FULL} placeholder={TEXT_INPUT_PLACEHOLDER.ENTER_YOUR_NAME} />
 
           <TextInputWithLabel

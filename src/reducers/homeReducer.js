@@ -1,4 +1,4 @@
-import * as TYPES from '@actions/types';
+import * as TYPES from '../actions/types';
 
 const initialState = {
   demo: [],

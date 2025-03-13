@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 
-import { icons } from '@assets/index';
-import { fontFamily } from '@utils/helper';
+import { icons } from '../../../assets/index';
+import { fontFamily } from '../../../utils/helper';
 
 import style from './style';
 import UseColors from '../../../theme/useColors';

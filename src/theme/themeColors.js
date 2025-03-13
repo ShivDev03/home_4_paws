@@ -1,4 +1,4 @@
-import { colors } from '@utils/colors';
+import { colors } from '../utils/colors';
 
 export const lightColors = {
   screenBackground: colors.white, //
