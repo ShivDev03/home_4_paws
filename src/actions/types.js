@@ -1,0 +1,3 @@
+export const GET_DEMO_START = 'GET_DEMO_START';
+export const GET_DEMO_SUCCESS = 'GET_DEMO_SUCCESS';
+export const GET_DEMO_FAILURE = 'GET_DEMO_FAILURE';
