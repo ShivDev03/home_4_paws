@@ -1,9 +1,13 @@
 import { get } from './index';
 
-const getDemo = async () => {
-  return get('v1/demo/url', {}, false);
+const getProduct = async () => {
+  return get('api/user/pets/paginated', {}, false);
+};
+const getProductDetails = async (data) => {
+  return get('api/user/pets', data, false);
 };
 
 export const homeApi = {
-  getDemo,
+  getProduct,
+  getProductDetails
 };

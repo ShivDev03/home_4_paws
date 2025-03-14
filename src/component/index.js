@@ -9,9 +9,11 @@ import ArtistList from './create/artistList';
 import EnhanceHeader from './create/enhanceHeader';
 import TextSelection from './create/textSelection';
 import TranslationTextArea from './create/translationTextArea';
+import ProductDetails from './home/productDetails';
 
 export {
   Button,
+  ProductDetails,
   TextInputWithLabel,
   Separator,
   Icon,

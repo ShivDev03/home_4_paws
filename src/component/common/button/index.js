@@ -3,6 +3,7 @@ import { Text, TouchableOpacity } from 'react-native';
 
 import style from './style';
 import UseColors from '../../../theme/useColors';
+import {colors} from '../../../utils/colors';
 
 const Button = ({ buttonName, onPress, buttonStyle, buttonTextStyle }) => {
   const { themeColors } = UseColors();
@@ -12,7 +13,7 @@ const Button = ({ buttonName, onPress, buttonStyle, buttonTextStyle }) => {
       style={[
         style.generatorButtonStyle,
         {
-          backgroundColor: themeColors.selectedTabIconColor,
+          backgroundColor: colors.DodgerBlue,
         },
         buttonStyle,
       ]}
@@ -21,7 +22,7 @@ const Button = ({ buttonName, onPress, buttonStyle, buttonTextStyle }) => {
         style={[
           style.generatorTextStyle,
           {
-            color: themeColors.screenBackground,
+            color: colors.black,
           },
           buttonTextStyle,
         ]}

@@ -5,7 +5,7 @@ import axios from 'axios/index';
 
 import { navigate } from '../navigation/navigationsServices';
 import { store } from '../reducers/store';
-import { TOKEN } from '../utils/constants';
+import {BASE_URL, TOKEN} from '../utils/constants';
 import { getAsyncStorageData } from '../utils/global';
 
 const defaultHeaders = {
@@ -13,7 +13,7 @@ const defaultHeaders = {
 };
 
 const url = (path) => {
-  return 'main api path' + path;
+  return BASE_URL + path;
 };
 
 const getHeaders = async (auth) => {

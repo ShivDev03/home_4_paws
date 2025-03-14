@@ -9,6 +9,7 @@ export const screenName = {
   SIGNUP: 'SignUp',
   FORGOT_PASSWORD: 'ForgotPassword',
   PLAY_SCREEN: 'PlayScreen',
+  PRODUCT_DETAILS: 'productDetails',
 };
 //enum for language
 export const tabStackName = {

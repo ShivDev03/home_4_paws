@@ -8,11 +8,11 @@
 export const colors = {
   white: '#FFFFFF',
   primaryBlack: '#333333',
-  DodgerBlue: '#2196F3',
+  DodgerBlue: '#66b3ff',
   transparentDodgerBlue: '#2196F399',
   DeepSaffron: '#FFB743',
-  borderColor: '#0000000C',
+  borderColor: '#ADADAD',
   voiceExampleColor: '#333333CC',
   black: '#3A3A3A',
-  lightGray: '#d2d1d1',
+  lightGray: '#F4F4F4',
 };

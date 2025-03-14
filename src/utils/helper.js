@@ -49,6 +49,7 @@ export const fontFamily = {
   poppinsMedium: 'Poppins Medium',
   poppinsSemiBold: 'Poppins SemiBold',
   inter: 'Inter Medium',
+  bebasNeue_regular: 'BebasNeue-Regular',
 };
 
 export const formatTime = (minutes, seconds) => {

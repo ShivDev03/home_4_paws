@@ -13,7 +13,9 @@ export const icons = {
   playUser: require('./icons/playScreenPhoto.png'),
   shop:require('./icons/ic_shop.png'),
   paw: require('./icons/ic_paw.png'),
+  unFilledHeart: require('./icons/ic_unfilled_heart.png'),
 };
 export const image = {
   premiumBackground: require('./image/premiumBackground.png'),
+  dog:require('./image/dog.jpg'),
 };
